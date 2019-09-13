@@ -1,0 +1,6 @@
+.card__topic {
+    text-transform: uppercase;
+}
+.card__footer {
+    display: flex;
+}
