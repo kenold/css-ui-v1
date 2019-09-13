@@ -93,4 +93,12 @@ body {
         cursor: pointer;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
     }
+    .card .card__body .card__title>span {
+        -webkit-transition: border-bottom .3s ease-in;
+        transition: border-bottom .3s ease-in;
+        border-bottom: 1px solid transparent;
+    }
+    .card:hover .card__body .card__title>span {
+        border-bottom: 1px solid #00d061;
+    }
 }
