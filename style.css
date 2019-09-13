@@ -89,4 +89,8 @@ body {
     .card {
         flex: 0 1 32%;
     }
+    .card:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+    }
 }
