@@ -76,13 +76,14 @@ body {
     justify-content: space-between; }
 
 .cards--overlay .card {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .cards--overlay .card__body {
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding-bottom: 32px;
+    padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px; }
   .cards--overlay .card__title {
@@ -90,6 +91,15 @@ body {
     padding-bottom: 0; }
   .cards--overlay .card__subtitle {
     color: #fff; }
+
+.cards--overlay .overlay {
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 3%, black 100%);
+  opacity: 0.6;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  left: 0px;
+  bottom: 0px; }
 
 @media (min-width: 768px) {
   .card {
