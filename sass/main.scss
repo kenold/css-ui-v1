@@ -7,7 +7,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 1em;
-    max-width: 1040px;
+    max-width: 1140px;
 }
 .intro {
     text-align: center;
@@ -49,7 +49,8 @@ body {
 }
 .card {
     background-color: #fff;
-    flex: 0 1 100%;
+    flex: 0 1 calc(50% - .5rem);
+    margin-bottom: 12px;;
     &__image {
         display: block;
         border: 0;
@@ -84,10 +85,30 @@ body {
         justify-content: space-between;
     }
 }
-
+.cards--overlay {
+    .card {
+        position: relative;
+        &__body {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            padding-bottom: 32px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        &__title {
+            color: #fff;
+            padding-bottom: 0;
+        }
+        &__subtitle {
+            color: #fff;
+        }
+    }
+}
 @media (min-width: 768px) {
     .card {
-        flex: 0 1 32%;
+        flex: 0 1 calc(25% - .75rem);
     }
     .card:hover {
         cursor: pointer;
