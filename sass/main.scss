@@ -1,4 +1,5 @@
 $accent-color: #00d061;
+$light-color: #fff;
 $title-font: 'Playfair Display', serif;
 $ss-font: 'Roboto', sans-serif;
 body {
@@ -75,7 +76,6 @@ body {
         font-family: $title-font;
         font-size: 1.25rem;
         font-weight: 700;
-        font-weight: 700;
         word-spacing: normal;
         letter-spacing: -.02em;
         line-height: 1.3em;
@@ -122,7 +122,17 @@ body {
 .cards--overlay-icon {
     .card {
         position: relative;
+        &__topic {
+            margin-bottom: 0;
+        }
+        &__title {
+            font-family: $ss-font;
+            font-size: 1rem;
+            padding-bottom: .5rem;
+        }
         &__icon {
+            color: $light-color;
+            font-size: 1.5rem;
             padding: 8px ;
             position: absolute ;
             right: 8px ;

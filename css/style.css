@@ -66,7 +66,6 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 1.25rem;
     font-weight: 700;
-    font-weight: 700;
     word-spacing: normal;
     letter-spacing: -.02em;
     line-height: 1.3em;
@@ -104,7 +103,15 @@ body {
 
 .cards--overlay-icon .card {
   position: relative; }
+  .cards--overlay-icon .card__topic {
+    margin-bottom: 0; }
+  .cards--overlay-icon .card__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding-bottom: .5rem; }
   .cards--overlay-icon .card__icon {
+    color: #fff;
+    font-size: 1.5rem;
     padding: 8px;
     position: absolute;
     right: 8px;
