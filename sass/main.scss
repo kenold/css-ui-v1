@@ -140,6 +140,42 @@ body {
         }
     }
 }
+.cards--video {
+    .card {
+        position: relative;
+        &__header {
+            position: relative;
+        }
+        &__topic {
+            margin-bottom: 0;
+        }
+        &__title {
+            font-family: $ss-font;
+            font-size: 1rem;
+            padding-bottom: .5rem;
+        }
+        &__icon {
+            color: $light-color;
+            font-size: 1.5rem;
+            padding: 8px ;
+            position: absolute ;
+            right: 8px ;
+            top: 8px ;
+        }
+        &__label {
+            position: absolute;
+            background-color: #000;
+            color: $light-color;
+            bottom: 0;
+            right: 0;
+            margin: 4px;
+            font-size: .875rem;
+            padding: 2px 4px;
+            border-radius: 2px;
+            letter-spacing: .5px;
+        }
+    }
+}
 @media (min-width: 768px) {
     .card {
         flex: 0 1 calc(25% - .75rem);
