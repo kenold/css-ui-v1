@@ -155,6 +155,7 @@ body {
             padding-bottom: .5rem;
         }
         &__icon {
+            display: none;
             color: $light-color;
             font-size: 1.5rem;
             padding: 8px ;
@@ -176,6 +177,12 @@ body {
         }
     }
 }
+
+// experimental
+.card:hover .card__icon {
+    display: block;
+}
+
 @media (min-width: 768px) {
     .card {
         flex: 0 1 calc(25% - .75rem);
