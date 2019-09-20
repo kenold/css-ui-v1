@@ -119,6 +119,17 @@ body {
         bottom: 0px;
     }
 }
+.cards--overlay-icon {
+    .card {
+        position: relative;
+        &__icon {
+            padding: 8px ;
+            position: absolute ;
+            right: 8px ;
+            top: 8px ;
+        }
+    }
+}
 @media (min-width: 768px) {
     .card {
         flex: 0 1 calc(25% - .75rem);
