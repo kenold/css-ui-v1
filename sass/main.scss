@@ -15,15 +15,15 @@ body {
     text-align: center;
     h2 {
         color: #1c1e21;
-        font-size: 4rem;
-        line-height: 4.375rem;
+        font-size: 2.125rem;
+        //line-height: 4.375rem;
         margin-bottom: 1rem;
     }
     h3 {
         color: #444950;
-        font-size: 1.75rem;
-        line-height: 2.375rem;
-        margin-bottom: 3.5rem;
+        font-size: 1.125rem;
+        //line-height: 2.375rem;
+        margin-bottom: 1.5rem;
         font-weight: 400;
     }
 }
@@ -192,6 +192,18 @@ body {
 }
 
 @media (min-width: 768px) {
+    .intro {
+        h2 {
+            font-size: 4rem;
+            line-height: 4.375rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+            line-height: 2.375rem;
+        }
+    }
+
+    // CARDS
     .card {
         flex: 0 1 calc(25% - .75rem);
     }
