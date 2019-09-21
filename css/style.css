@@ -46,6 +46,8 @@ body {
   background-color: #fff;
   flex: 0 1 calc(50% - .5rem);
   margin-bottom: 12px; }
+  .card:hover {
+    cursor: pointer; }
   .card__image {
     display: block;
     border: 0;
@@ -53,7 +55,7 @@ body {
     height: auto; }
   .card__body {
     margin: 20px; }
-  .card__topic, .card__footer {
+  .card__category, .card__footer {
     font-size: .75rem;
     letter-spacing: .1rem;
     line-height: 1.2em;
@@ -74,10 +76,10 @@ body {
     display: flex;
     justify-content: space-between; }
 
-.cards--overlay .card {
+.card--overlay {
   position: relative;
   text-align: center; }
-  .cards--overlay .card__body {
+  .card--overlay .card__body {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -85,31 +87,30 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px; }
-  .cards--overlay .card__title {
+  .card--overlay .card__title {
     color: #fff;
     font-family: "Roboto", sans-serif;
     padding-bottom: 0; }
-  .cards--overlay .card__subtitle {
+  .card--overlay .card__subtitle {
     color: #fff; }
+  .card--overlay .darken {
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 3%, black 100%);
+    opacity: 0.6;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    left: 0px;
+    bottom: 0px; }
 
-.cards--overlay .overlay {
-  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 3%, black 100%);
-  opacity: 0.6;
-  position: absolute;
-  height: 60%;
-  width: 100%;
-  left: 0px;
-  bottom: 0px; }
-
-.cards--overlay-icon .card {
+.card--overlay-icon {
   position: relative; }
-  .cards--overlay-icon .card__topic {
+  .card--overlay-icon .card__category {
     margin-bottom: 0; }
-  .cards--overlay-icon .card__title {
+  .card--overlay-icon .card__title {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     padding-bottom: .5rem; }
-  .cards--overlay-icon .card__icon {
+  .card--overlay-icon .card__icon {
     color: #fff;
     font-size: 1.5rem;
     padding: 8px;
@@ -117,17 +118,17 @@ body {
     right: 8px;
     top: 8px; }
 
-.cards--video .card {
+.card--video {
   position: relative; }
-  .cards--video .card__header {
+  .card--video .card__media {
     position: relative; }
-  .cards--video .card__topic {
+  .card--video .card__category {
     margin-bottom: 0; }
-  .cards--video .card__title {
+  .card--video .card__title {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     padding-bottom: .5rem; }
-  .cards--video .card__icon {
+  .card--video .card__icon {
     display: none;
     color: #fff;
     font-size: 1.5rem;
@@ -135,7 +136,7 @@ body {
     position: absolute;
     right: 8px;
     top: 8px; }
-  .cards--video .card__label {
+  .card--video .card__label {
     position: absolute;
     background-color: #000;
     color: #fff;
