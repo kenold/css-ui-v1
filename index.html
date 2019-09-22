@@ -53,14 +53,14 @@
                     </div>
                 </section>
 
-            <!-- CARD OVERLAY / TOURS -->
+            <!-- CARD OVERLAY / MOVIES -->
             <section class="l-cards">
                 <div class="l-cards__heading">
-                    <h1>Cards Overlay + Tours</h1>
+                    <h1>Cards Overlay + Movies</h1>
                 </div>
                 <div class="cards">
                     {{#each posts}}
-                        {{#if isTour}}
+                        {{#if isMovie}}
                             <div class="card card--overlay">
                                 <header class="card__media">
                                     <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
@@ -70,7 +70,12 @@
                                     <div class="card__title">
                                         <span>{{title}}</span>
                                     </div>
-                                    <div class="card__subtitle">${{price}}</div>
+                                    <div class="card__text">{{excerpt}}</div>
+                                    <div class="card__actions cta">
+                                        <div class="cta__play"><i class="fas fa-play"></i> Play</div>
+                                        <div class="cta__favorite"><i class="far fa-heart"></i> Favorite</div>
+                                        <div class="cta__download"><i class="fas fa-download"></i> Download</div>
+                                    </div>
                                 </div>
                             </div>
                         {{/if}}
@@ -88,7 +93,7 @@
                         {{#if isProduct}}
                             <div class="card card--overlay-icon">
                                 <header class="card__media">
-                                    <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">
+                                    <img src="images/products/{{id}}.jpg" alt="" class="card__image">
                                 </header>
                                 <div class="card__icon"><i class="far fa-heart"></i></div>
                                 <div class="card__body">
