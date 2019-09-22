@@ -49,6 +49,7 @@ ul {
   flex-wrap: wrap; }
 
 .card {
+  display: flex;
   background-color: #fff;
   margin-bottom: 12px; }
   .card.grid-3 {
