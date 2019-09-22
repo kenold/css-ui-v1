@@ -185,6 +185,25 @@ ul {
 .card:hover .card__icon {
   display: block; }
 
+.card--wide {
+  display: block; }
+  .card--wide a {
+    display: flex;
+    align-items: center; }
+  .card--wide .card__category {
+    margin-bottom: 5px; }
+  .card--wide .card__title {
+    font-size: 90%;
+    padding-bottom: .5rem; }
+  .card--wide .card__footer {
+    font-size: .5rem; }
+  .card--wide .card__author {
+    display: none; }
+  .card--wide .card__text {
+    color: #000;
+    font-size: .875rem;
+    padding-bottom: .5rem; }
+
 @media (min-width: 768px) {
   .intro h2 {
     font-size: 4rem;
@@ -204,4 +223,16 @@ ul {
   .card__title > span {
     -webkit-transition: border-bottom .3s ease-in;
     transition: border-bottom .3s ease-in;
-    border-bottom: 1px solid transparent; } }
+    border-bottom: 1px solid transparent; }
+  .cards .card--wide {
+    flex-wrap: nowrap; }
+  .card--wide {
+    flex: 0 1 calc(50% - .5rem); }
+    .card--wide .card__image {
+      width: 150px; }
+    .card--wide .card__category {
+      margin-bottom: 5px; }
+    .card--wide .card__title {
+      font-size: 90%; }
+    .card--wide .card__footer {
+      font-size: .5rem; } }

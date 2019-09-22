@@ -23,39 +23,39 @@
         </section>
 
         <!-- place holder for dynamic data -->
-            <div class="data-list-container"></div>
+        <div class="data-list-container"></div>
 
-            <script id="data-template" type="text/x-handlebars-template">
-                <section class="l-cards">
-                    <div class="l-cards__heading">
-                        <h1>Cards + Blog Posts </h1>
-                    </div>
-                    <div class="cards">
-                        {{#each posts}}
-                            {{#if isBlog}}
-                                <article class="card grid-4">
-                                    <a href="post.html">
-                                        <figure class="card__media">
-                                            <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
-                                        </figure>
-                                        <div class="card__body">
-                                            <div class="card__category">
-                                                {{category}}
-                                            </div>
-                                            <div class="card__title">
-                                                <span>{{title}}</span>
-                                            </div>
-                                            <footer class="card__footer">
-                                                <div class="card__author">{{author}}</div>
-                                                <div class="card__date">5 hours ago</div>
-                                            </footer>
+        <script id="data-template" type="text/x-handlebars-template">
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards + Blog Posts </h1>
+                </div>
+                <div class="cards">
+                    {{#each posts}}
+                        {{#if isBlog}}
+                            <article class="card grid-4">
+                                <a href="post.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
+                                    </figure>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
                                         </div>
-                                    </a>
-                                </article>
-                            {{/if}}
-                        {{/each}}
-                    </div>
-                </section>
+                                        <div class="card__title">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <footer class="card__footer">
+                                            <div class="card__author">{{author}}</div>
+                                            <div class="card__date">5 hours ago</div>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
 
             <!-- CARD OVERLAY / MOVIES -->
             <section class="l-cards">
@@ -140,6 +140,38 @@
                                             <span>{{title}}</span>
                                         </div>
                                         <div class="card__subtitle">{{artist}}</div>
+                                    </div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards + Blog Wide </h1>
+                </div>
+                <div class="cards">
+                    {{#each posts}}
+                        {{#if isBlog}}
+                            <article class="card card--wide">
+                                <a href="post.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
+                                    </figure>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
+                                        </div>
+                                        <div class="card__title">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__text">{{excerpt}}</div>
+                                        <footer class="card__footer">
+                                            <div class="card__author">{{author}}</div>
+                                            <div class="card__date">5 hours ago</div>
+                                        </footer>
                                     </div>
                                 </a>
                             </article>

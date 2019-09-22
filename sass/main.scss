@@ -1,5 +1,6 @@
 $accent-color: #00d061;
 $light-color: #fff;
+$black: #000;
 $title-font: 'Playfair Display', Georgia, serif;
 $ss-font: 'Roboto', Arial, Helvetica, sans-serif;
 body {
@@ -68,7 +69,6 @@ ul {
         flex: 0 1 calc(50% - .5rem);
     }
     a {
-        //display: flex;
         text-decoration: none;
         color: inherit;
     }
@@ -237,6 +237,33 @@ ul {
     display: block;
 }
 
+// CARD WIDE
+.card--wide {
+    display: block;
+    a {
+        display: flex;
+        align-items: center;
+    }
+    .card__category {
+        margin-bottom: 5px;
+    }
+    .card__title {
+        font-size: 90%;
+        padding-bottom: .5rem;
+    }
+    .card__footer {
+        font-size: .5rem;
+    }
+    .card__author {
+        display: none;
+    }
+    .card__text {
+        color: $black;
+        font-size: .875rem;
+        padding-bottom: .5rem;
+    }
+}
+
 @media (min-width: 768px) {
     .intro {
         h2 {
@@ -269,5 +296,25 @@ ul {
         -webkit-transition: border-bottom .3s ease-in;
         transition: border-bottom .3s ease-in;
         border-bottom: 1px solid transparent;
+    }
+
+    // CARD WIDE
+    .cards .card--wide {
+        flex-wrap: nowrap;
+    }
+    .card--wide {
+        flex: 0 1 calc(50% - .5rem);
+        .card__image {
+            width: 150px;
+        }
+        .card__category {
+            margin-bottom: 5px;
+        }
+        .card__title {
+            font-size: 90%;
+        }
+        .card__footer {
+            font-size: .5rem;
+        }
     }
 }
