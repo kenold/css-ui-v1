@@ -7,6 +7,8 @@
     <title>CSS Card Components Kenold Beauplan</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -66,10 +68,10 @@
                             <article class="card card--overlay grid-3">
                                 <a href="movie.html">
                                     <figure class="card__media">
-                                        <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
+                                        <img src="images/thumbs/thumb4.jpg" alt="{{title}}" class="card__image">
                                     </figure>
                                     <div class="darken"></div>
-                                    <li class="card__body">
+                                    <div class="card__body">
                                         <div class="separator"></div>
                                         <div class="card__title">
                                             <span>{{title}}</span>
@@ -99,7 +101,7 @@
                             <article class="card card--overlay-icon grid-4">
                                 <a href="product.html">
                                     <figure class="card__media">
-                                        <img src="images/products/{{id}}.jpg" alt="" class="card__image">
+                                        <img src="images/products/{{id}}.jpg" alt="{{title}}" class="card__image">
                                     </figure>
                                     <div class="card__icon"><i class="far fa-heart"></i></div>
                                     <div class="card__body">
@@ -129,7 +131,7 @@
                             <article class="card card--video grid-4">
                                 <a href="video.html">
                                     <figure class="card__media">
-                                        <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">
+                                        <img src="images/thumbs/thumb8.jpg" alt="{{title}}" class="card__image">
                                         <div class="card__label">{{duration}}</div>
                                     </figure>
                                     <div class="card__icon"><i class="fas fa-play"></i></div>
@@ -151,6 +153,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="node_modules/handlebars-intl/dist/handlebars-intl.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
