@@ -287,11 +287,31 @@ $(document).ready(function() {
 
     // slick carousel
     $('.carousel-3').slick({
-        slidesToShow: 3,
+        mobileFirst: true,
+        slidesToShow: 1.5,
         slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        arrows: false,
+        infinite: false,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
+        arrows: false,
+        //dots: true,
+        //autoplay: true,
+        //autoplaySpeed: 2000,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 1
+      }
+    }
+  ]
     });
 
 });
