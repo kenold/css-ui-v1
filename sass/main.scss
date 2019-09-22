@@ -114,7 +114,7 @@ ul {
         justify-content: space-between;
     }
 }
-// ********************* CARD OVERLAY ************************
+// ********************* CARD OVERLAY MOVIES ************************
 .card--overlay {
         position: relative;
     .card {
@@ -193,6 +193,8 @@ ul {
 // ********************* CARD OVERLAY VIDEO ************************
 .card--video {
     position: relative;
+    // margin-right needed only if carousel is used
+    margin-right: 10px;
     .card {
         &__media {
             position: relative;

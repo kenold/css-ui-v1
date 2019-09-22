@@ -151,7 +151,8 @@ ul {
     top: 8px; }
 
 .card--video {
-  position: relative; }
+  position: relative;
+  margin-right: 10px; }
   .card--video .card__media {
     position: relative; }
   .card--video .card__category {
