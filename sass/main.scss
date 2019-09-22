@@ -117,6 +117,7 @@ ul {
 // ********************* CARD OVERLAY MOVIES ************************
 .card--overlay {
         position: relative;
+        display: block;
     .card {
         &__body {
             position: absolute;

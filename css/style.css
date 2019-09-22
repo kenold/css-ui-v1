@@ -94,7 +94,8 @@ ul {
     justify-content: space-between; }
 
 .card--overlay {
-  position: relative; }
+  position: relative;
+  display: block; }
   .card--overlay .card__body {
     position: absolute;
     bottom: 0px;
