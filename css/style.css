@@ -1,6 +1,6 @@
 body {
   background-color: #f5f5f5;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
 
 figure {
   margin: 0; }
@@ -77,7 +77,7 @@ ul {
     text-transform: uppercase;
     margin-bottom: 15px; }
   .card__title {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 1.25rem;
     font-weight: 700;
     word-spacing: normal;
@@ -103,7 +103,7 @@ ul {
     padding-right: 24px; }
   .card--overlay .card__title {
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 90%;
     letter-spacing: .02em;
     padding-bottom: 0;
@@ -134,7 +134,7 @@ ul {
   .card--overlay-icon .card__category {
     margin-bottom: 0; }
   .card--overlay-icon .card__title {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     padding-bottom: .5rem; }
   .card--overlay-icon .card__icon {
@@ -152,7 +152,7 @@ ul {
   .card--video .card__category {
     margin-bottom: 0; }
   .card--video .card__title {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     padding-bottom: .5rem; }
   .card--video .card__icon {
