@@ -70,32 +70,44 @@ body {
     letter-spacing: -.02em;
     line-height: 1.3em;
     padding-bottom: 2em; }
+  .card__subtitle {
+    color: #fff; }
+  .card__text {
+    color: #fff; }
   .card__footer {
     display: flex;
     justify-content: space-between; }
 
 .card--overlay {
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .card--overlay .card__body {
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
     padding-bottom: 20px;
-    padding-left: 24px;
     padding-right: 24px; }
   .card--overlay .card__title {
     color: #fff;
     font-family: "Roboto", sans-serif;
-    padding-bottom: 0; }
-  .card--overlay .card__subtitle {
-    color: #fff; }
+    font-size: 90%;
+    letter-spacing: .02em;
+    padding-bottom: 0;
+    text-transform: uppercase; }
+  .card--overlay .card__actions {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; }
+    .card--overlay .card__actions .cta__play {
+      background-color: red;
+      padding: 5px 10px; }
   .card--overlay .darken {
     background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 3%, black 100%);
     opacity: 0.6;
     position: absolute;
-    height: 60%;
+    height: 80%;
     width: 100%;
     left: 0px;
     bottom: 0px; }
@@ -109,7 +121,7 @@ body {
     font-size: 1rem;
     padding-bottom: .5rem; }
   .card--overlay-icon .card__icon {
-    color: #fff;
+    color: #00d061;
     font-size: 1.5rem;
     padding: 8px;
     position: absolute;
