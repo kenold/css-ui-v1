@@ -32,7 +32,7 @@
                         {{#each posts}}
                             {{#if isBlog}}
                                 <article class="card">
-                                    <a href="show.html">
+                                    <a href="post.html">
                                         <figure class="card__media">
                                             <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
                                         </figure>
@@ -64,21 +64,23 @@
                     {{#each posts}}
                         {{#if isMovie}}
                             <article class="card card--overlay">
-                                <figure class="card__media">
-                                    <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
-                                </figure>
-                                <div class="darken"></div>
-                                <div class="card__body">
-                                    <div class="card__title">
-                                        <span>{{title}}</span>
+                                <a href="movie.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
+                                    </figure>
+                                    <div class="darken"></div>
+                                    <div class="card__body">
+                                        <div class="card__title">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__text">{{excerpt}}</div>
+                                        <div class="card__actions cta">
+                                            <div class="cta__play"><i class="fas fa-play"></i> Play</div>
+                                            <div class="cta__favorite"><i class="far fa-heart"></i> Favorite</div>
+                                            <div class="cta__download"><i class="fas fa-download"></i> Download</div>
+                                        </div>
                                     </div>
-                                    <div class="card__text">{{excerpt}}</div>
-                                    <div class="card__actions cta">
-                                        <div class="cta__play"><i class="fas fa-play"></i> Play</div>
-                                        <div class="cta__favorite"><i class="far fa-heart"></i> Favorite</div>
-                                        <div class="cta__download"><i class="fas fa-download"></i> Download</div>
-                                    </div>
-                                </div>
+                                </a>
                             </article>
                         {{/if}}
                     {{/each}}
@@ -94,19 +96,21 @@
                     {{#each posts}}
                         {{#if isProduct}}
                             <article class="card card--overlay-icon">
-                                <figure class="card__media">
-                                    <img src="images/products/{{id}}.jpg" alt="" class="card__image">
-                                </figure>
-                                <div class="card__icon"><i class="far fa-heart"></i></div>
-                                <div class="card__body">
-                                    <div class="card__category">
-                                        {{category}}
+                                <a href="product.html">
+                                    <figure class="card__media">
+                                        <img src="images/products/{{id}}.jpg" alt="" class="card__image">
+                                    </figure>
+                                    <div class="card__icon"><i class="far fa-heart"></i></div>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
+                                        </div>
+                                        <div class="card__title">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__subtitle">${{price}}</div>
                                     </div>
-                                    <div class="card__title">
-                                        <span>{{title}}</span>
-                                    </div>
-                                    <div class="card__subtitle">${{price}}</div>
-                                </div>
+                                </a>
                             </article>
                         {{/if}}
                     {{/each}}
@@ -122,17 +126,19 @@
                     {{#each posts}}
                         {{#if isVideo}}
                             <article class="card card--video">
-                                <figure class="card__media">
-                                    <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">
-                                    <div class="card__label">{{duration}}</div>
-                                </figure>
-                                <div class="card__icon"><i class="fas fa-play"></i></div>
-                                <div class="card__body">
-                                    <div class="card__title">
-                                        <span>{{title}}</span>
+                                <a href="video.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">
+                                        <div class="card__label">{{duration}}</div>
+                                    </figure>
+                                    <div class="card__icon"><i class="fas fa-play"></i></div>
+                                    <div class="card__body">
+                                        <div class="card__title">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__subtitle">{{artist}}</div>
                                     </div>
-                                    <div class="card__subtitle">{{artist}}</div>
-                                </div>
+                                </a>
                             </article>
                         {{/if}}
                     {{/each}}
