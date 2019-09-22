@@ -9,6 +9,11 @@ body {
 figure {
     margin: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .container {
     margin: 0 auto;
     padding: 0 1em;
@@ -131,12 +136,11 @@ figure {
         &__actions {
             color: $light-color;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             margin-top: 10px;
             .cta__play {
                 background-color: red;
-                padding: 5px 10px;
+                padding: 5px 25px;
             }
         }
     }

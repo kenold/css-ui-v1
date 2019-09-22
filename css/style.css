@@ -5,6 +5,11 @@ body {
 figure {
   margin: 0; }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .container {
   margin: 0 auto;
   padding: 0 1em;
@@ -106,12 +111,11 @@ figure {
   .card--overlay .card__actions {
     color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 10px; }
     .card--overlay .card__actions .cta__play {
       background-color: red;
-      padding: 5px 10px; }
+      padding: 5px 25px; }
   .card--overlay .darken {
     background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 3%, black 100%);
     opacity: 0.6;
