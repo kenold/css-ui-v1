@@ -285,4 +285,13 @@ $(document).ready(function() {
     var compiledDataTemplate = Handlebars.compile(dataTemplate);
     $(".data-list-container").html(compiledDataTemplate(data));
 
+    // slick carousel
+    $('.carousel-3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
 });
