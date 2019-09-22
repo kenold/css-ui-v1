@@ -54,8 +54,13 @@ figure {
 }
 .card {
     background-color: #fff;
-    flex: 0 1 calc(50% - .5rem);
     margin-bottom: 12px;
+    &.grid-3 {
+        flex-basis: 100%;
+    }
+    &.grid-4 {
+        flex: 0 1 calc(50% - .5rem);
+    }
     a {
         //display: flex;
         text-decoration: none;
@@ -209,7 +214,7 @@ figure {
     }
 }
 
-// experimental
+// experimental, nned to be nested
 .card:hover .card__icon {
     display: block;
 }
@@ -228,7 +233,12 @@ figure {
 
     // CARDS
     .card {
-        flex: 0 1 calc(25% - .75rem);
+        &.grid-3 {
+            flex: 0 1 calc(33% - .75rem);
+        }
+        &.grid-4 {
+            flex: 0 1 calc(25% - .75rem);
+        }
     }
     .card:hover {
         cursor: pointer;

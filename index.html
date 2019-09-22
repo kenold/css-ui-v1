@@ -31,7 +31,7 @@
                     <div class="cards">
                         {{#each posts}}
                             {{#if isBlog}}
-                                <article class="card">
+                                <article class="card grid-4">
                                     <a href="post.html">
                                         <figure class="card__media">
                                             <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
@@ -63,7 +63,7 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isMovie}}
-                            <article class="card card--overlay">
+                            <article class="card card--overlay grid-3">
                                 <a href="movie.html">
                                     <figure class="card__media">
                                         <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
@@ -95,7 +95,7 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isProduct}}
-                            <article class="card card--overlay-icon">
+                            <article class="card card--overlay-icon grid-4">
                                 <a href="product.html">
                                     <figure class="card__media">
                                         <img src="images/products/{{id}}.jpg" alt="" class="card__image">
@@ -125,7 +125,7 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isVideo}}
-                            <article class="card card--video">
+                            <article class="card card--video grid-4">
                                 <a href="video.html">
                                     <figure class="card__media">
                                         <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">

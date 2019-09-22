@@ -45,8 +45,11 @@ figure {
 
 .card {
   background-color: #fff;
-  flex: 0 1 calc(50% - .5rem);
   margin-bottom: 12px; }
+  .card.grid-3 {
+    flex-basis: 100%; }
+  .card.grid-4 {
+    flex: 0 1 calc(50% - .5rem); }
   .card a {
     text-decoration: none;
     color: inherit; }
@@ -174,7 +177,9 @@ figure {
   .intro h3 {
     font-size: 1.75rem;
     line-height: 2.375rem; }
-  .card {
+  .card.grid-3 {
+    flex: 0 1 calc(33% - .75rem); }
+  .card.grid-4 {
     flex: 0 1 calc(25% - .75rem); }
   .card:hover {
     cursor: pointer;
