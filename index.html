@@ -31,23 +31,25 @@
                     <div class="cards">
                         {{#each posts}}
                             {{#if isBlog}}
-                                <div class="card">
-                                    <header class="card__media">
-                                        <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
-                                    </header>
-                                    <div class="card__body">
-                                        <div class="card__category">
-                                            {{category}}
+                                <article class="card">
+                                    <a href="show.html">
+                                        <figure class="card__media">
+                                            <img src="images/thumbs/{{id}}.jpg" alt="" class="card__image">
+                                        </figure>
+                                        <div class="card__body">
+                                            <div class="card__category">
+                                                {{category}}
+                                            </div>
+                                            <div class="card__title">
+                                                <span>{{title}}</span>
+                                            </div>
+                                            <footer class="card__footer">
+                                                <div class="card__author">{{author}}</div>
+                                                <div class="card__date">5 hours ago</div>
+                                            </footer>
                                         </div>
-                                        <div class="card__title">
-                                            <span>{{title}}</span>
-                                        </div>
-                                        <footer class="card__footer">
-                                            <div class="card__author">{{author}}</div>
-                                            <div class="card__date">5 hours ago</div>
-                                        </footer>
-                                    </div>
-                                </div>
+                                    </a>
+                                </article>
                             {{/if}}
                         {{/each}}
                     </div>
@@ -61,10 +63,10 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isMovie}}
-                            <div class="card card--overlay">
-                                <header class="card__media">
+                            <article class="card card--overlay">
+                                <figure class="card__media">
                                     <img src="images/thumbs/thumb4.jpg" alt="" class="card__image">
-                                </header>
+                                </figure>
                                 <div class="darken"></div>
                                 <div class="card__body">
                                     <div class="card__title">
@@ -77,7 +79,7 @@
                                         <div class="cta__download"><i class="fas fa-download"></i> Download</div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         {{/if}}
                     {{/each}}
                 </div>
@@ -91,10 +93,10 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isProduct}}
-                            <div class="card card--overlay-icon">
-                                <header class="card__media">
+                            <article class="card card--overlay-icon">
+                                <figure class="card__media">
                                     <img src="images/products/{{id}}.jpg" alt="" class="card__image">
-                                </header>
+                                </figure>
                                 <div class="card__icon"><i class="far fa-heart"></i></div>
                                 <div class="card__body">
                                     <div class="card__category">
@@ -105,7 +107,7 @@
                                     </div>
                                     <div class="card__subtitle">${{price}}</div>
                                 </div>
-                            </div>
+                            </article>
                         {{/if}}
                     {{/each}}
                 </div>
@@ -119,11 +121,11 @@
                 <div class="cards">
                     {{#each posts}}
                         {{#if isVideo}}
-                            <div class="card card--video">
-                                <header class="card__media">
+                            <article class="card card--video">
+                                <figure class="card__media">
                                     <img src="images/thumbs/thumb8.jpg" alt="" class="card__image">
                                     <div class="card__label">{{duration}}</div>
-                                </header>
+                                </figure>
                                 <div class="card__icon"><i class="fas fa-play"></i></div>
                                 <div class="card__body">
                                     <div class="card__title">
@@ -131,7 +133,7 @@
                                     </div>
                                     <div class="card__subtitle">{{artist}}</div>
                                 </div>
-                            </div>
+                            </article>
                         {{/if}}
                     {{/each}}
                 </div>
