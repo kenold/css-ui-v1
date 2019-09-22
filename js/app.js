@@ -121,36 +121,6 @@ var data = {
             "isMovie": null,
             "isVideo": null
             }, {
-            "id": 9,
-            "title": "Titanic",
-            "date": "8/2/2019",
-            "category": null,
-            "excerpt": "Nullam varius.",
-            "author": null,
-            "price": 97.26,
-            "sale_price": 35.62,
-            "duration": null,
-            "artist": null,
-            "isBlog": null,
-            "isProduct": null,
-            "isMovie": "Yes",
-            "isVideo": null
-            }, {
-            "id": 10,
-            "title": "Rambo",
-            "date": "1/2/2019",
-            "category": null,
-            "excerpt": "Nunc rhoncus dui vel sem.",
-            "author": null,
-            "price": 90.67,
-            "sale_price": 46.56,
-            "duration": null,
-            "artist": null,
-            "isBlog": null,
-            "isProduct": null,
-            "isMovie": "Yes",
-            "isVideo": null
-            }, {
             "id": 11,
             "title": "Dumb and Dummer",
             "date": "11/26/2018",
