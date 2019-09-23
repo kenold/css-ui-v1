@@ -57,6 +57,8 @@ ul {
   .card.grid-4 {
     flex: 0 1 calc(50% - .5rem); }
   .card a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: inherit; }
   .card:hover {
@@ -68,14 +70,21 @@ ul {
     height: auto; }
   .card__body {
     margin: 20px; }
+  .card__category {
+    letter-spacing: .1rem;
+    text-transform: uppercase; }
+  .card__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: .5rem;
+    letter-spacing: 0;
+    margin: auto 20px; }
   .card__category, .card__footer {
     font-size: .75rem;
-    letter-spacing: .1rem;
     line-height: 1.2em;
     word-spacing: normal;
     font-weight: 500;
     color: #787679;
-    text-transform: uppercase;
     margin-bottom: 15px; }
   .card__title {
     font-family: "Playfair Display", Georgia, serif;
@@ -84,15 +93,12 @@ ul {
     word-spacing: normal;
     letter-spacing: -.02em;
     line-height: 1.3em;
-    padding-bottom: 2em; }
+    padding-bottom: .5em; }
   .card__subtitle {
     color: #000;
     font-size: 90%; }
   .card__text {
     color: #000; }
-  .card__footer {
-    display: flex;
-    justify-content: space-between; }
 
 .card--overlay {
   position: relative;
@@ -193,6 +199,7 @@ ul {
   display: block; }
   .card--wide a {
     display: flex;
+    flex-direction: row;
     align-items: center; }
   .card--wide .card__image {
     width: 120px; }
@@ -221,12 +228,12 @@ ul {
     flex: 0 1 calc(33% - .75rem); }
   .card.grid-4 {
     flex: 0 1 calc(25% - .75rem); }
-  .card:hover {
+  .cards--blog .card:hover {
     cursor: pointer;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05); }
-    .card:hover .card__title > span {
+    .cards--blog .card:hover .card__title > span {
       border-bottom: 1px solid #00d061; }
-  .card__title > span {
+  .cards--blog .card__title > span {
     -webkit-transition: border-bottom .3s ease-in;
     transition: border-bottom .3s ease-in;
     border-bottom: 1px solid transparent; }

@@ -3,6 +3,9 @@ $light-color: #fff;
 $black: #000;
 $title-font: 'Playfair Display', Georgia, serif;
 $ss-font: 'Roboto', Arial, Helvetica, sans-serif;
+
+// MIXINS
+
 body {
     background-color: #f5f5f5;
     font-family: $ss-font;
@@ -69,6 +72,8 @@ ul {
         flex: 0 1 calc(50% - .5rem);
     }
     a {
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
         color: inherit;
     }
@@ -84,14 +89,23 @@ ul {
     &__body {
         margin: 20px;
     }
+    &__category {
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: .5rem;
+        letter-spacing: 0;
+        margin: auto 20px;
+    }
     &__category, &__footer {
         font-size: .75rem;
-        letter-spacing: .1rem;
         line-height: 1.2em;
         word-spacing: normal;
         font-weight: 500;
         color: #787679;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
     &__title {
@@ -101,7 +115,7 @@ ul {
         word-spacing: normal;
         letter-spacing: -.02em;
         line-height: 1.3em;
-        padding-bottom: 2em;
+        padding-bottom: .5em;
     }
     &__subtitle {
         color: #000;
@@ -109,10 +123,6 @@ ul {
     }
     &__text {
         color: #000;
-    }
-    &__footer {
-        display: flex;
-        justify-content: space-between;
     }
 }
 // ********************* CARD OVERLAY MOVIES ************************
@@ -247,6 +257,7 @@ ul {
     display: block;
     a {
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     .card__image {
@@ -293,17 +304,21 @@ ul {
             flex: 0 1 calc(25% - .75rem);
         }
     }
-    .card:hover {
-        cursor: pointer;
-        box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
-        .card__title>span {
-            border-bottom: 1px solid $accent-color;
+
+    // add hover border for blogs only
+    .cards--blog {
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+            .card__title>span {
+                border-bottom: 1px solid $accent-color;
+            }
         }
-    }
-    .card__title>span {
-        -webkit-transition: border-bottom .3s ease-in;
-        transition: border-bottom .3s ease-in;
-        border-bottom: 1px solid transparent;
+        .card__title>span {
+            -webkit-transition: border-bottom .3s ease-in;
+            transition: border-bottom .3s ease-in;
+            border-bottom: 1px solid transparent;
+        }
     }
 
     // CARD WIDE
