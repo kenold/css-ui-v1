@@ -105,6 +105,8 @@ ul {
 .card--overlay {
   position: relative;
   display: block; }
+  .card--overlay a {
+    display: block; }
   .card--overlay .card__body {
     position: absolute;
     bottom: 0px;

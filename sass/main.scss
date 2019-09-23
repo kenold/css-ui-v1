@@ -130,8 +130,11 @@ ul {
 }
 // ********************* CARD OVERLAY MOVIES ************************
 .card--overlay {
-        position: relative;
+    position: relative;
+    display: block;
+    a {
         display: block;
+    }
     .card {
         &__body {
             position: absolute;
