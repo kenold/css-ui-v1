@@ -86,9 +86,10 @@ ul {
     line-height: 1.3em;
     padding-bottom: 2em; }
   .card__subtitle {
-    color: #fff; }
+    color: #000;
+    font-size: 90%; }
   .card__text {
-    color: #fff; }
+    color: #000; }
   .card__footer {
     display: flex;
     justify-content: space-between; }
@@ -106,10 +107,13 @@ ul {
   .card--overlay .card__title {
     color: #fff;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 90%;
+    font-size: 95%;
     letter-spacing: .02em;
     padding-bottom: 0;
     text-transform: uppercase; }
+  .card--overlay .card__text {
+    color: #fff;
+    font-size: 95%; }
   .card--overlay .card__actions {
     color: #fff;
     display: flex;
@@ -190,6 +194,8 @@ ul {
   .card--wide a {
     display: flex;
     align-items: center; }
+  .card--wide .card__image {
+    width: 120px; }
   .card--wide .card__category {
     margin-bottom: 5px; }
   .card--wide .card__title {
@@ -233,6 +239,6 @@ ul {
     .card--wide .card__category {
       margin-bottom: 5px; }
     .card--wide .card__title {
-      font-size: 90%; }
+      font-size: 1.125rem; }
     .card--wide .card__footer {
       font-size: .5rem; } }

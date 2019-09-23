@@ -104,10 +104,11 @@ ul {
         padding-bottom: 2em;
     }
     &__subtitle {
-        color: #fff;
+        color: #000;
+        font-size: 90%;
     }
     &__text {
-        color: #fff;
+        color: #000;
     }
     &__footer {
         display: flex;
@@ -130,10 +131,14 @@ ul {
         &__title {
             color: #fff;
             font-family: $ss-font;
-            font-size: 90%;
+            font-size: 95%;
             letter-spacing: .02em;
             padding-bottom: 0;
             text-transform: uppercase;
+        }
+        &__text {
+            color: $light-color;
+            font-size: 95%;
         }
         &__actions {
             color: $light-color;
@@ -244,6 +249,9 @@ ul {
         display: flex;
         align-items: center;
     }
+    .card__image {
+        width: 120px;
+    }
     .card__category {
         margin-bottom: 5px;
     }
@@ -311,7 +319,7 @@ ul {
             margin-bottom: 5px;
         }
         .card__title {
-            font-size: 90%;
+            font-size: 1.125rem;
         }
         .card__footer {
             font-size: .5rem;
