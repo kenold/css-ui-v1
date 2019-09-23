@@ -10,6 +10,9 @@ ul {
   padding: 0;
   list-style: none; }
 
+.slick-prev:before, .slick-next:before {
+  color: #00d061; }
+
 .container {
   margin: 0 auto;
   padding: 0 1em;
