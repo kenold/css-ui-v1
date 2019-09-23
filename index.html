@@ -71,19 +71,20 @@
                                         <img src="images/thumbs/movie-{{id}}.png" alt="{{title}}" class="card__image">
                                     </figure>
                                     <div class="darken"></div>
-                                    <div class="card__body">
-                                        <div class="separator"></div>
-                                        <div class="card__title" title="{{title}}">
-                                            <span>{{title}}</span>
-                                        </div>
-                                        <div class="card__text">{{excerpt}}</div>
-                                        <ul class="card__actions cta">
-                                            <li class="cta__play"><i class="fas fa-play"></i> Play</li>
-                                            <li class="cta__favorite"><i class="far fa-heart"></i> Favorite</li>
-                                            <li class="cta__download"><i class="fas fa-download"></i> Download</li>
-                                        </ul>
-                                    </div>
                                 </a>
+                                <div class="card__body">
+                                    <div class="separator"></div>
+                                    <div class="card__title" title="{{title}}">
+                                        <span>{{title}}</span>
+                                    </div>
+                                    <div class="card__text">{{excerpt}}</div>
+                                    <ul class="card__actions cta">
+                                        <li class="cta__play"><a href="video-play.html"><i class="fas fa-play"></i> Play</a></li>
+                                        <li class="cta__favorite"><a href="video-favorite.html"><i class="far fa-heart"></i> Favorite</a></li>
+                                        <li class="cta__download"><a href="video-download.html"><i class="fas fa-download"></i> Download</a></li>
+                                    </ul>
+                                </div>
+
                             </article>
                         {{/if}}
                     {{/each}}
