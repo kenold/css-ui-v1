@@ -87,11 +87,10 @@ ul {
     color: #787679;
     margin-bottom: 15px; }
   .card__title {
-    font-family: "Playfair Display", Georgia, serif;
     font-size: 1.25rem;
     font-weight: 700;
     word-spacing: normal;
-    letter-spacing: -.02em;
+    letter-spacing: -.01em;
     line-height: 1.3em;
     padding-bottom: .5em; }
   .card__subtitle {
@@ -214,8 +213,9 @@ ul {
     display: none; }
   .card--wide .card__text {
     color: #000;
-    font-size: .875rem;
-    padding-bottom: .5rem; }
+    font-size: 0.9375rem;
+    padding-bottom: .5rem;
+    line-height: 1.3em; }
 
 @media (min-width: 768px) {
   .intro h2 {
