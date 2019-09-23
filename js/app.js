@@ -299,9 +299,9 @@ $(document).ready(function() {
         slidesToShow: 3.5,
         slidesToScroll: 1,
         arrows: true,
-        //dots: true,
-        //autoplay: true,
-        //autoplaySpeed: 2000,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
       }
     },
     {
