@@ -30,7 +30,7 @@
                 <div class="l-cards__heading">
                     <h1>Cards + Blog Posts </h1>
                 </div>
-                <div class="cards">
+                <div class="cards cards--blog">
                     {{#each posts}}
                         {{#if isBlog}}
                             <article class="card grid-4">
@@ -45,10 +45,10 @@
                                         <div class="card__title">
                                             <span>{{title}}</span>
                                         </div>
-                                        <footer class="card__footer">
-                                            <div class="card__author">{{author}}</div>
-                                            <div class="card__date">5 hours ago</div>
-                                        </footer>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="card__author">{{author}}</div>
+                                        <div class="card__date">5 hours ago</div>
                                     </div>
                                 </a>
                             </article>
@@ -111,8 +111,8 @@
                                         <div class="card__title">
                                             <span>{{title}}</span>
                                         </div>
-                                        <div class="card__subtitle">${{price}}</div>
                                     </div>
+                                    <div class="card__footer">${{price}}</div>
                                 </a>
                             </article>
                         {{/if}}
@@ -152,7 +152,7 @@
                 <div class="l-cards__heading">
                     <h1>Cards + Blog Wide </h1>
                 </div>
-                <div class="cards">
+                <div class="cards cards--blog">
                     {{#each posts}}
                         {{#if isBlog}}
                             <article class="card card--wide">
@@ -168,10 +168,6 @@
                                             <span>{{title}}</span>
                                         </div>
                                         <div class="card__text">{{excerpt}}</div>
-                                        <footer class="card__footer">
-                                            <div class="card__author">{{author}}</div>
-                                            <div class="card__date">5 hours ago</div>
-                                        </footer>
                                     </div>
                                 </a>
                             </article>
