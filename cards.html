@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS UI Components - Kenold Beauplan</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <h2>Card UI</h2>
+            <h3>Cad UI documentation text here</h3>
+        </section>
+
+        <!-- place holder for dynamic data -->
+        <div class="data-list-container"></div>
+
+        <script id="data-template" type="text/x-handlebars-template">
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards + Blog Posts </h1>
+                </div>
+                <div class="cards cards--blog">
+                    {{#each posts}}
+                        {{#if isBlog}}
+                            <article class="card grid-4">
+                                <a href="post.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/{{id}}.jpg" alt="{{title}}" class="card__image">
+                                    </figure>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
+                                        </div>
+                                        <div class="card__title" title="{{title}}">
+                                            <span>{{title}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="card__author">{{author}}</div>
+                                        <div class="card__date">5 hours ago</div>
+                                    </div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- CARD OVERLAY / MOVIES -->
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards Overlay + Movies</h1>
+                </div>
+                <li class="cards">
+                    {{#each posts}}
+                        {{#if isMovie}}
+                            <article class="card card--overlay grid-3">
+                                <a href="movie.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/movie-{{id}}.png" alt="{{title}}" class="card__image">
+                                    </figure>
+                                    <div class="darken"></div>
+                                </a>
+                                <div class="card__body">
+                                    <div class="separator"></div>
+                                    <div class="card__title" title="{{title}}">
+                                        <span>{{title}}</span>
+                                    </div>
+                                    <div class="card__text">{{excerpt}}</div>
+                                    <ul class="card__actions cta">
+                                        <li class="cta__play"><a href="video-play.html"><i class="fas fa-play"></i> Play</a></li>
+                                        <li class="cta__favorite"><a href="video-favorite.html"><i class="far fa-heart"></i> Favorite</a></li>
+                                        <li class="cta__download"><a href="video-download.html"><i class="fas fa-download"></i> Download</a></li>
+                                    </ul>
+                                </div>
+
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- CARD OVERLAY + ICON PRODUCT-->
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards Overlay + Icon/Product</h1>
+                </div>
+                <div class="cards">
+                    {{#each posts}}
+                        {{#if isProduct}}
+                            <article class="card card--overlay-icon grid-4">
+                                <a href="product.html">
+                                    <figure class="card__media">
+                                        <img src="images/products/{{id}}.jpg" alt="{{title}}" class="card__image">
+                                    </figure>
+                                    <div class="card__icon"><i class="far fa-heart"></i></div>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
+                                        </div>
+                                        <div class="card__title" title="{{title}}">
+                                            <span>{{title}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">${{price}}</div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+
+            <!-- CARD OVERLAY + VIDEO -->
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards Overlay + Video</h1>
+                </div>
+                <div class="cards carousel-3">
+                    {{#each posts}}
+                        {{#if isVideo}}
+                            <article class="card card--video">
+                                <a href="video.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/video-{{id}}.jpg" alt="{{title}}" class="card__image">
+                                        <div class="card__label">{{duration}}</div>
+                                    </figure>
+                                    <div class="card__icon"><i class="fas fa-play"></i></div>
+                                    <div class="card__body">
+                                        <div class="card__title" title="{{title}}">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__subtitle">{{artist}}</div>
+                                    </div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+
+            <section class="l-cards">
+                <div class="l-cards__heading">
+                    <h1>Cards + Blog Wide </h1>
+                </div>
+                <div class="cards cards--blog">
+                    {{#each posts}}
+                        {{#if isBlog}}
+                            <article class="card card--wide">
+                                <a href="post.html">
+                                    <figure class="card__media">
+                                        <img src="images/thumbs/{{id}}.jpg" alt="{{title}}" class="card__image">
+                                    </figure>
+                                    <div class="card__body">
+                                        <div class="card__category">
+                                            {{category}}
+                                        </div>
+                                        <div class="card__title" title="{{title}}">
+                                            <span>{{title}}</span>
+                                        </div>
+                                        <div class="card__text">{{excerpt}}</div>
+                                    </div>
+                                </a>
+                            </article>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </section>
+        </script>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="node_modules/handlebars-intl/dist/handlebars-intl.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
