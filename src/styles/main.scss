@@ -20,8 +20,9 @@ ul {
 }
 // SLICK CAROUSEL
 .slick-prev:before, .slick-next:before {
-    color: $accent-color;
+    color: $accent-color!important;
 }
+
 .container {
     margin: 0 auto;
     padding: 0 1em;
