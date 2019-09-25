@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BlogCode from "../../components/codes/blog";
 import PostData from '../../data/posts.json';
 
 class Blog extends Component {
@@ -30,6 +31,10 @@ class Blog extends Component {
 							</article>
 						))}
 					</div>
+				</section>
+
+				<section className="code">
+					<BlogCode />
 				</section>
 			</div>
 		);
