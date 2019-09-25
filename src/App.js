@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import Blog from './components/cards/blog';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     	<div className="container">
 			CSS UIs
     	</div>
+		<Blog />
     </div>
   );
 }
