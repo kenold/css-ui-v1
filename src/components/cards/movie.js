@@ -15,7 +15,7 @@ class Blog extends Component {
 								<a href="movie.html">
 									<figure className="card__media">
 										{/* TODO: rename movie thumbs */}
-										<img src={"images/thumbs/movie-" + movie.id + ".png"} alt="movie.title" className="card__image" />>
+										<img src={"images/thumbs/movie-" + movie.id + ".png"} alt="movie.title" className="card__image" />
 									</figure>
 									<div className="darken"></div>
 								</a>
