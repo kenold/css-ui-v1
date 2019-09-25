@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import VideoData from '../../data/videos.json';
 
 class Video extends Component {
@@ -17,7 +18,7 @@ class Video extends Component {
 										<img src={"images/thumbs/video-" + video.id + ".jpg"} alt={video.title} className="card__image" />
 										<div className="card__label">{video.duration}</div>
 									</figure>
-									<div className="card__icon"><i className="fas fa-play"></i></div>
+									<div className="card__icon"><FontAwesomeIcon icon="play"/></div>
 									<div className="card__body">
 										<div className="card__title" title={video.title}>
 											<span>{video.title}</span>

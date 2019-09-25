@@ -4,9 +4,14 @@ import {
 	Route,
 	Link
 } from 'react-router-dom';
-import logo from './logo.svg';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHeart, faPlay } from '@fortawesome/free-solid-svg-icons';
+
 import './App.scss';
 import Cards from './components/pages/cards';
+
+library.add(faHeart, faPlay);
 
 class App extends Component {
 	render() {

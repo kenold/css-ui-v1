@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProductData from '../../data/products.json';
 
 class Product extends Component {
@@ -16,7 +17,7 @@ class Product extends Component {
 									<figure className="card__media">
 										<img src={"images/products/" + product.id + ".jpg"} alt={product.title} className="card__image" />
 									</figure>
-									<div className="card__icon"><i className="far fa-heart"></i></div>
+									<div className="card__icon"><FontAwesomeIcon icon="heart"/></div>
 									<div className="card__body">
 										<div className="card__category">
 											{product.category}
