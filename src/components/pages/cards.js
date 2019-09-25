@@ -8,7 +8,7 @@ import BlogWide from '../../components/cards/blogWide'
 class Cards extends Component {
     render() {
         return (
-            <div className="container">
+            <div className="cards-page">
                 <Blog />
                 <Movie />
                 <Product />
