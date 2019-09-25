@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "All of Those Products Are Making Your Skin Worse",
+        "date": "5/30/2019",
+        "category": "Health",
+        "excerpt": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
+        "author": "Jane Doe"
+    },
+    {
+        "id": 2,
+        "title": "Young Women Are Leading The Global Climate Strike",
+        "date": "8/3/2019",
+        "category": "Culture",
+        "excerpt": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
+        "author": "Jean E. Gustave"
+    },
+    {
+        "id": 3,
+        "title": "People Are Going to Save Us All From Office Life",
+        "date": "5/27/2019",
+        "category": "Science",
+        "excerpt": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
+        "author": "Kenold Beauplan"
+    },
+    {
+        "id": 4,
+        "title": "The Top Milan Street Style Trends, From Leather To Mixed Prints",
+        "date": "4/3/2019",
+        "category": "Fashion",
+        "excerpt": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
+        "author": "John Smith"
+    }
+]
