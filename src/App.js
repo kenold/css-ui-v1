@@ -19,7 +19,7 @@ library.add(faHeart, faPlay);
 class App extends Component {
 	render() {
 		return (
-			<Router basename='ui'>
+			<Router basename='css-ui-v1'>
 				<div className="App">
 					<div className="container">
 						<section className="intro">
