@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './App.scss';
+
 import {
 	BrowserRouter as Router,
 	Route,
@@ -9,7 +11,6 @@ import {
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart, faPlay } from '@fortawesome/free-solid-svg-icons';
 
-import './App.scss';
 import Home from './components/home';
 import Cards from './components/pages/cards';
 
