@@ -14,7 +14,7 @@ class Blog extends Component {
 						<article key={post.id} className="card grid-4">
 							<a href="post.html">
 								<figure className="card__media">
-									<img src={"images/thumbs/" + post.id + ".jpg"} alt={post.title} className="card__image" />
+									<img src={"./images/thumbs/" + post.id + ".jpg"} alt={post.title} className="card__image" />
 								</figure>
 								<div className="card__body">
 									<div className="card__category">{post.category}</div>
