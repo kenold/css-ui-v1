@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 
 import {
-	BrowserRouter as Router,
+	HashRouter,
 	Route,
 	Link,
 	Switch
@@ -19,7 +19,7 @@ library.add(faHeart, faPlay);
 class App extends Component {
 	render() {
 		return (
-			<Router>
+			<HashRouter basename='/'>
 				<div className="App">
 					<div className="container">
 						<section className="intro">
@@ -37,7 +37,7 @@ class App extends Component {
 						<Route path="/cards" component={Cards} />
 					</Switch>
 				</div>
-			</Router>
+			</HashRouter>
 		);
 	}
 
