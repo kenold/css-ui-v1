@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
 	BrowserRouter as Router,
 	Route,
-	Link
+	Link,
+	Switch
 } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -30,8 +31,10 @@ class App extends Component {
 						</ul>
 					</div>
 
-					<Route exact path="/" component={Home} />
-					<Route path="/cards" component={Cards} />
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route path="/cards" component={Cards} />
+					</Switch>
 				</div>
 			</Router>
 		);
