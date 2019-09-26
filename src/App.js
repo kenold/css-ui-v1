@@ -9,6 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart, faPlay } from '@fortawesome/free-solid-svg-icons';
 
 import './App.scss';
+import Home from './components/home';
 import Cards from './components/pages/cards';
 
 library.add(faHeart, faPlay);
@@ -29,7 +30,7 @@ class App extends Component {
 						</ul>
 					</div>
 
-					{/* <Route exact path="/" component={App} /> */}
+					<Route exact path="/" component={Home} />
 					<Route path="/cards" component={Cards} />
 				</div>
 			</Router>
